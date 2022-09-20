@@ -4,133 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Rick&Morty.css">
-    <title>Rick and Morty</title>
+    <link rel="stylesheet" href="./CSS/Home.css">
+    <title>MyCV</title>
 </head>
+
 <body>
+    <script src="./"></script>
     <header>
-        <h4>Another Joke about APIs? Give it a REST. Let’s Riabout ck!</h4>
-        <button class="about-me">
-              <a href="../MyCV_training/about.html">About me</a>
-        </button>
-      
+        <img src="./img/Frame 7.png" alt="">
+        <nav>
+            <ul class=" listanavegador">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./Experience.html">Experience</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="change-mode">Change Mode</button>
     </header>
-    <section class="caja1">
-        <div class="info">
-            <img src="./img/image 10.png" alt="">
-            <span>
-                <h1>How Well Do You Know Rick & Morty?</h1>
-                <p>Rick and Morty is an American adult animated science-fiction sitcom created by Justin Roiland and Dan Harmon for Cartoon Network's nighttime programming block Adult Swim. The series follows the misadventures of cynical mad scientist Rick Sanchez and his good-hearted but fretful grandson Morty Smith, who split their time between domestic life and interdimensional adventures.</p>
-                <p>
-            Though you can enjoy Rick and Morty simply as a zany cartoon with some crude humor, you can also dive deeper into the human condition and wrestle with the existence of god itself through these characters. So, here you can check them all!    
-                </p>
-            </span>
+    <section class="caja2conimagen">
+        <h3>Hi, I Am <SPan id="minombreamarillo">Sarah Ortiz Andrade</SPan> 👋</h3>
+        <h1>Architect and Fronted Developer Jr.</h1>
+        <span id="textopeq">I make your work easier and I love it.</span>
+        <img src="./img/avataaars 1.png" alt="avatar del perfil">
+    </section>
+    <section class="trescajas">
+        <div class="cajaGris">
+            <img src="./img/Group 6.png" alt="">
+            <div class="TextoCajaGris">
+                <span>9+</span>
+                <span>Years Of Experience</span>
+            </div>
         </div>
-        <div class="linksCards">
-            <nav>
-                <ul class="list-cards">
-                    <li onclick= "getCardsAll() "id="caracteres">All Characteres</li>
-                    <li onclick="getCardsFemale()" id="female">Female</li>
-                    <li onclick="getCardsMale()"id="male">Male</li>
-                    <li onclick= "getCardsAlive() "id="alive">Alive</li>
-                    <li onclick= "getCardsDead() "id="dead>">Dead</li>
-                </ul>
-            </nav>
+
+        <div class="cajaGris">
+            <img src="./img/Group 6 (1).png" alt="">
+            <div  class="TextoCajaGris">
+                <span>30+</span>
+                <span>Complete Proyects</span>
+            </div>      
+        </div>
+
+        <div class="cajaGris">
+            <img src="./img/Group 6 (2).png" alt="">
+            <div class="TextoCajaGris">
+                <span>30+</span>
+                <span>Happy Clients</span>
+            </div>           
         </div>
     </section>
-    <section class="cajaCards">
-        <!-- <article class="card">
-            <div>
-                <img class="imgCard" src="https://rickandmortyapi.com/api/character/avatar/352.jpeg" alt="personaje">
-            </div>
-            <h3>personaje</h3>
-                <p>estado</p>
-        </article>
-        <article class="card">
-            <div>
-                <img class="imgCard" src="https://rickandmortyapi.com/api/character/avatar/352.jpeg" alt="personaje">
-            </div>
-            <h3>personaje</h3>
-                <p>estado</p>
-        </article>
-        <article class="card">
-            <div>
-                <img class="imgCard" src="https://rickandmortyapi.com/api/character/avatar/352.jpeg" alt="personaje">
-            </div>
-            <h3>personaje</h3>
-                <p>estado</p>
-        </article>
-        <article class="card">
-            <div>
-                <img class="imgCard" src="https://rickandmortyapi.com/api/character/avatar/352.jpeg" alt="personaje">
-            </div>
-            <h3>personaje</h3>
-                <p>estado</p>
-        </article>
-        <article class="card">
-            <div>
-                <img class="imgCard" src="https://rickandmortyapi.com/api/character/avatar/352.jpeg" alt="personaje">
-            </div>
-            <h3>personaje</h3>
-                <p>estado</p>
-        </article>
-        <article class="card">
-            <div>
-                <img class="imgCard" src="https://rickandmortyapi.com/api/character/avatar/352.jpeg" alt="personaje">
-            </div>
-            <h3>personaje</h3>
-                <p>estado</p>
-        </article>
-        <article class="card">
-            <div>
-                <img class="imgCard" src="https://rickandmortyapi.com/api/character/avatar/352.jpeg" alt="personaje">
-            </div>
-            <h3>personaje</h3>
-                <p>estado</p>
-        </article>
-        <article class="card">
-            <div>
-                <img class="imgCard" src="https://rickandmortyapi.com/api/character/avatar/352.jpeg" alt="personaje">
-            </div>
-            <h3>personaje</h3>
-                <p>estado</p>
-        </article>
-        <article class="card">
-            <div>
-                <img class="imgCard" src="https://rickandmortyapi.com/api/character/avatar/352.jpeg" alt="personaje">
-            </div>
-            <h3>personaje</h3>
-                <p>estado</p>
-        </article>
-        <article class="card">
-            <div>
-                <img class="imgCard" src="https://rickandmortyapi.com/api/character/avatar/352.jpeg" alt="personaje">
-            </div>
-            <h3>personaje</h3>
-                <p>estado</p>
-        </article>
-        <article class="card">
-            <div>
-                <img class="imgCard" src="https://rickandmortyapi.com/api/character/avatar/352.jpeg" alt="personaje">
-            </div>
-            <h3>personaje</h3>
-                <p>estado</p>
-        </article>
-        <article class="card">
-            <div>
-                <img class="imgCard" src="https://rickandmortyapi.com/api/character/avatar/352.jpeg" alt="personaje">
-            </div>
-            <h3>personaje</h3>
-                <p>estado</p>
-        </article>
-        <article class="card">
-            <div>
-                <img class="imgCard" src="https://rickandmortyapi.com/api/character/avatar/352.jpeg" alt="personaje">
-            </div>
-            <h3>personaje</h3>
-                <p>estado</p>
-        </article> -->
-    </section>
+
     <footer>
         <div>
             <h3 class="namefooter">SARAH ORTIZ.</h3>
@@ -155,9 +78,13 @@
         </div>
         <div>
             <h4 class="subtitles">Hire Me</h4>
-            <p class="enterMail">Visit my LinkedIn account!</p>
+            <p class="enterMail">Enter your mail to get my portafolio and CV</p>
+            <div class="inputGroup">
+                <input type="text" id="name" required class="input">
+                <label for="name" class="input-label">Email address</label>
+            </div>
         </div>
     </footer>
-    <script src="./Rick&Morty.js"></script>
+    <script src="./Change_Mode.js"></script>
 </body>
 </html>
